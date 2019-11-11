@@ -12,5 +12,7 @@ public class MyHelloFrame extends JFrame
         setSize(300,300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
+        MyHelloPanelListener mp = new MyHelloPanelListener();
+        this.add(mp);
     }
 }
