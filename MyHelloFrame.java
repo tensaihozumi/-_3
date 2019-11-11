@@ -8,7 +8,7 @@ import javax.swing.*;
 public class MyHelloFrame extends JFrame
 {
     public MyHelloFrame(){
-        setTitle("실습_3");
+        setTitle("실습_3(2019.11.11)");
         setSize(300,300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
