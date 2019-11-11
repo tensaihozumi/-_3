@@ -14,6 +14,11 @@ public class MyHelloFrame extends JFrame
         setVisible(true);
         MyHelloPanelListener mp = new MyHelloPanelListener();
         this.add(mp);
+<<<<<<< HEAD
         
+=======
+        this.addMouseListener(mp);
+        this.addKeyListener(mp);
+>>>>>>> 3dba14495459c095e5af14d011641349a6f7d528
     }
 }

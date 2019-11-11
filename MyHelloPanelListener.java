@@ -7,11 +7,16 @@ import java.awt.*;
  * @author (your name)
  * @version (a version number or a date)
  */
+<<<<<<< HEAD
 public class MyHelloPanelListener extends JPanel implements KeyListener{
+=======
+public class MyHelloPanelListener extends JPanel implements MouseListener,KeyListener
+{
+>>>>>>> 3dba14495459c095e5af14d011641349a6f7d528
     public JLabel la = new JLabel("Hello");
     public MyHelloPanelListener(){
-        la.setSize(100,20);
-        la.setLocation(150,10);
+        la.setSize(50,20);
+        la.setLocation(30,30);
         this.setLayout(null);
         la.setFocusable(true);
         la.requestFocus();
@@ -37,5 +42,9 @@ public class MyHelloPanelListener extends JPanel implements KeyListener{
         int y = e.getY();
         la.setLocation(x,y);
     }
+    public void mouseEntered(MouseEvent e){}
+    public void mouseExited(MouseEvent e){}
+    public void mousePressed(MouseEvent e){}
+    public void mouseReleased(MouseEvent e){}
     
 }
