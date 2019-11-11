@@ -11,7 +11,7 @@ public class MyHelloPanelListener extends JPanel implements KeyListener{
     public JLabel la = new JLabel("Hello");
     public MyHelloPanelListener(){
         la.setSize(100,20);
-        la.setLocation(50,50);
+        la.setLocation(150,10);
         this.setLayout(null);
         la.setFocusable(true);
         la.requestFocus();
@@ -32,4 +32,10 @@ public class MyHelloPanelListener extends JPanel implements KeyListener{
     }
     public void keyReleased(KeyEvent e){}
     public void keyTyped(KeyEvent e){}
+    public void mouseClicked(MouseEvent e){
+        int x = e.getX();
+        int y = e.getY();
+        la.setLocation(x,y);
+    }
+    
 }
