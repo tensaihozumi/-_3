@@ -7,12 +7,12 @@ import java.awt.*;
  * @author (your name)
  * @version (a version number or a date)
  */
-<<<<<<< HEAD
-public class MyHelloPanelListener extends JPanel implements KeyListener{
-=======
+
+
+
 public class MyHelloPanelListener extends JPanel implements MouseListener,KeyListener
 {
->>>>>>> 3dba14495459c095e5af14d011641349a6f7d528
+
     public JLabel la = new JLabel("Hello");
     public MyHelloPanelListener(){
         la.setSize(50,20);
