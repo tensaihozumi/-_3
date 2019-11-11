@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.event.*;
+import java.awt.*;
 /**
  * Write a description of class MyHelloPanelListener here.
  *
@@ -17,7 +18,19 @@ public class MyHelloPanelListener extends JPanel implements KeyListener implemen
         la.requestFocus();
         this.add(la);
     }
-    public void keyPressed(KeyEvent e){}
+    public void keyPressed(KeyEvent e){
+        int keyCode = e.getKeyCode();
+        switch(keyCode){
+            case KeyEvent.VK_UP:
+            la.setLocation(la.getX(), la.getY()-10);break;
+            case KeyEvent.VK_DOWN:
+            la.setLocation(la.getX(), la.getY()+10);break;
+            case KeyEvent.VK_LEFT:
+            la.setLocation(la.getX()-10,la.getY());break;
+            case KeyEvent.VK_RIGHT:
+            la.setLocation(la.getX()+10,la.getY());break;
+        }
+    }
     public void keyReleased(KeyEvent e){}
     public void keyTyped(KeyEvent e){}
 }
