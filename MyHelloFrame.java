@@ -14,5 +14,6 @@ public class MyHelloFrame extends JFrame
         setVisible(true);
         MyHelloPanelListener mp = new MyHelloPanelListener();
         this.add(mp);
+        
     }
 }
