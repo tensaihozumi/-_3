@@ -6,8 +6,8 @@ import java.awt.event.*;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class MyHelloPanelListener extends JPanel implements KeyListener
-{
+public class MyHelloPanelListener extends JPanel implements KeyListener implements MouseListener
+{ 
     public JLabel la = new JLabel("Hello");
     public MyHelloPanelListener(){
         la.setSize(100,20);
