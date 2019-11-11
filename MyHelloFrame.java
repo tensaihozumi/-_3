@@ -15,8 +15,13 @@ public class MyHelloFrame extends JFrame
         MyHelloPanelListener mp = new MyHelloPanelListener();
         this.add(mp);
 
+
         this.addMouseListener(mp);
         this.addKeyListener(mp);
+
+        this.addMouseListener(mp);
+        this.addKeyListener(mp);
+
 
         this.addMouseListener(mp);
         this.addKeyListener(mp);

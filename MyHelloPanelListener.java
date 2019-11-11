@@ -8,8 +8,6 @@ import java.awt.*;
  * @version (a version number or a date)
  */
 
-
-
 public class MyHelloPanelListener extends JPanel implements MouseListener,KeyListener
 {
 
